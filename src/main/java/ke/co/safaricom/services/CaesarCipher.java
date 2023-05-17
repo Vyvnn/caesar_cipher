@@ -11,7 +11,7 @@ public class CaesarCipher {
         StringBuilder output= new StringBuilder();
 
         for(char item: messageArray) {
-            char temp = shiftChar(item,key);
+            char temp = shiftChar(item,key,ops:'e');
             output.append(temp);
 
 
@@ -22,20 +22,43 @@ public class CaesarCipher {
 
 
     };
-    public String decode(){
+    public String decode(String message,int key){
         //takes cipherText as input and return plain Text
+        char [] messageArray=message.toCharArray();
+
+        StringBuilder output= new StringBuilder();
+
+        for(char item: messageArray) {
+            char temp = shiftChar(item,key,ops:'d');
+            output.append(temp);
+
+
+
+
+        }
+        return output.toString();
+
+
         return"";
 
     }
-    private char shiftChar(char c ,int k){
+    private char shiftChar(char c ,int k , char ops ){
         int oldIndex =ALPHABETS.indexOf(c);
 
         if(oldIndex == -1) {
 
             return c;
         };
+        int newIndex;
+        if (ops =='e'){
+            newIndex= (oldIndex +k)% 26;
+        } else if (ops == 'd') {
+            newIndex =(oldIndex -k)% 26;
 
-            int newIndex =(oldIndex + k)% 26;
+        }
+
+
+        newIndex =(oldIndex + k)% 26;
 
             int pos;
             char cipherChar;
