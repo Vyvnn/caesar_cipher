@@ -22,7 +22,7 @@ public class GetUserInput {
         System.out.println("");
 
         System.out.print("Enter your message: ");
-        message =scanner.nextLine();
+        message =scanner.nextLine().toUpperCase();
         System.out.println("");
 
         System.out.print("Enter your secret key: ");
@@ -40,7 +40,7 @@ public class GetUserInput {
 
 
 
-        return validator.isValid(userInput);
+        return validator.isValid(input);
 
 
 

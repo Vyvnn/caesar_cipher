@@ -16,7 +16,7 @@ class CaesarCipherTest {
         String output =caesarCipher.decode(plainText ,key);
         System.out.println("Test output: "  +output);
 
-        assertEquals(cipherText,output);
+        assertEquals(plainText,output);
 
     }
 
@@ -30,6 +30,6 @@ class CaesarCipherTest {
         String output =caesarCipher.encode(cipherText ,key);
         System.out.println("Test output: "  +output);
 
-        assertEquals(plainText,output);
+        assertEquals(cipherText,output);
     }
 }
