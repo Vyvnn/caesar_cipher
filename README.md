@@ -9,7 +9,7 @@ A Caesar cipher is a type of substitution in which each letter is shifted a cert
 
 
 # Project Setup Instructions
-- Clone the Repository in your IDE. 
+- Clone the Repository in your IDE. (git@github.com:Vyvnn/caesar_cipher.git)
 - Install all dependencies, and you should be good to go.
 
 
