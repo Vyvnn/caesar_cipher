@@ -1,6 +1,5 @@
 package ke.co.safaricom.services;
 public class CaesarCipher {
-    private final String ALPHABETS ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     // encode ->newIndex=(oldIndex + key) %26; if newIndex>25 then subtract 26
     //decode-> newIndex =(oldIndex - key) %26;  if newIndex>25 then add 26
 
@@ -22,7 +21,7 @@ public class CaesarCipher {
         return output.toString();
 
 
-    };
+    }
     public String decode(String message,int key){
         //takes cipherText as input and return plain Text
         char[] messageArray = message.toUpperCase().toCharArray();
@@ -45,13 +44,14 @@ public class CaesarCipher {
 
     }
     private char shiftChar(char c ,int key , char ops ){
-        int oldIndex =ALPHABETS.indexOf(c);
+        String ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        int oldIndex = ALPHABETS.indexOf(c);
 
         if(oldIndex == -1) {
 
             return c;
-        };
-        int newIndex = 0;
+        }
+        int newIndex ;
 
 
 
