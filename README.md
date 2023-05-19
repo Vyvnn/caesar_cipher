@@ -1,7 +1,7 @@
 # Project Name
-## CAESAR CIPHER
+### CAESAR CIPHER
 
-## By Vivian Muthoni
+### By Vivian Muthoni
 
 ## Description of project
 This project implements the Caesar Cipher using Java.
@@ -30,4 +30,4 @@ Will be shared once the frontend is built and app is hosted.
 
 
 # Copyright and License information
-(c) 2023 Vivian Muthoni
+(c) 2023 Vivian Muthoni.
