@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f980bb8-3cdb-4299-b2c1-a7a48d3b7b08" name="Changes" comment="to encode ciphertext" />
+    <list default="true" id="5f980bb8-3cdb-4299-b2c1-a7a48d3b7b08" name="Changes" comment="to fix encoding decoding error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ke/co/safaricom/services/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ke/co/safaricom/services/CaesarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ke/co/safaricom/services/CaesarCipherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ke/co/safaricom/services/CaesarCipherTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +72,62 @@
       <visibility group="org.jetbrains.plugins.gradle.execution.GradleRunAnythingProvider" flag="true" />
     </myKeys>
   </component>
+  <component name="RunManager">
+    <configuration name="CaesarCipherTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ke.co.safaricom.services.CaesarCipherTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="CaesarCipherTest.testCipherDecodingReturnCorrectCipherText_True" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ke.co.safaricom.services.CaesarCipherTest.testCipherDecodingReturnCorrectCipherText_True&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CaesarCipherTest.testCipherDecodingReturnCorrectCipherText_True" />
+        <item itemvalue="Gradle.CaesarCipherTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684353011005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="to fix encoding decoding error">
+      <created>1684413462742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684413462742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,7 +174,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="to encode ciphertext" />
-    <option name="LAST_COMMIT_MESSAGE" value="to encode ciphertext" />
+    <MESSAGE value="to fix encoding decoding error" />
+    <option name="LAST_COMMIT_MESSAGE" value="to fix encoding decoding error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

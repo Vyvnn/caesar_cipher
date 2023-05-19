@@ -7,9 +7,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Validator validator = new Validator();
 
         boolean userInputIsValid = GetUserInput.getUserInput();
-
+        System.out.println();
 
         if (userInputIsValid) {
             UserInput userInput = GetUserInput.input;
